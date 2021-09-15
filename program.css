@@ -1,0 +1,174 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav1{
+  background:white;
+  height: 50px;
+  width: 100%;
+  padding-top: 20px;
+/*   box-shadow: 1px 1px 10px; */
+}
+
+.divline{
+ margin-right: 15px;
+ position: absolute;
+ right:55px;
+ top: 31px;
+ height: 2px;
+ width: 25px;
+ background:#697cf1;
+ animation: slideDown 0.9s ease;
+}
+
+
+
+
+
+
+.checked1{
+  position: absolute;
+  top: 10px;
+  right:45px;
+ height: 80px;
+ width: 80px;
+ opacity: 0;
+}
+
+
+.divbox{
+ opacity: 00.9;
+ background:#0c1327;
+ height: 570px ;
+ width: 250px;
+transition: 0.5s ease;
+transform: translatex(-200%);
+position: absolute;
+top: 0px;
+align-items: right;
+border-bottom: 2px solid black;
+}
+
+.checked1:checked ~ .divbox{
+transform: translatex(0%);
+}
+
+.checked1:checked ~ .divline3{
+  background-color: white;
+  position: absolute;
+  left: 30px;
+}
+
+.menutag{
+ color:#798aec;
+ position:absolute;
+ top: 30px;
+ right: 20px;
+ animation: slideDown 1.2s ease;
+}
+
+.divline2{
+  width: 20px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  position: absolute;
+    top: 34px;
+    right:55px;
+}
+
+.divline3{
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    position: absolute;
+    top: 39px;
+    right:55px;
+}
+
+
+body{
+  font-family: Arial;
+}
+
+.emailicon{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 80px;
+  top:80px;
+}
+
+.phonepng{
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  right: 20px;
+  top:80px;
+}
+
+
+
+
+
+.maindiv{
+  height: 180px;
+  width: 100%;
+  background:white;
+  margin-top: 0px;
+  text-align: center;
+  
+}
+
+
+.logopng{
+  height: 50px;
+  width: 150px;
+  margin-top:2px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.headingmain{
+    margin-top: 80px;
+    color: rgb(88,88,88);
+    animation: slideup 1.7s ease;
+}
+
+.contactbutton{
+    background: rgb(61,170,253);
+    border-radius: 50px;
+    color:#12182f;
+    box-shadow: 8px 8px 20px;
+    margin-top: 25px;
+    padding: 15px 30px 15px 30px;
+    border:2px solid rgb(61,170,253);
+    animation: slideup 2.4s ease;
+}
+
+.menuheading{
+  color:#0c1327;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 20px;
+  background: #af91f6;
+}
+
+@keyframes slideDown{
+  0%{
+    transform: translatey(-250px);
+  }
+  100%{
+    transform: translatey(0);
+  }
+}
+
+@keyframes slideup{
+  0%{
+    transform: translatey(250px) ;
+  }
+  100%{
+    transform: translatey(0);
+  }
+}
